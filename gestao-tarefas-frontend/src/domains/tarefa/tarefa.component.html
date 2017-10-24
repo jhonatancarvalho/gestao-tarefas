@@ -1,0 +1,49 @@
+<div class="panel panel-default panel-content-crud">
+    <div class="panel-heading panel-header-crud">
+        <h4>Cadastrar Tarefa</h4>
+    </div>
+    <div class="panel-body">
+        <message [mensagemInput]="mensagem"></message>
+        <form>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="titulo">Título</label>
+                        <input type="text" class="form-control" name="titulo" [(ngModel)]="tarefa.titulo">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="descricao">Descrição</label>
+                        <input type="text" class="form-control" name="descricao" [(ngModel)]="tarefa.descricao">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="dataCriacao">Data Criação</label>
+                        <input type="date" class="form-control" id="dataCriacao" [(ngModel)]="tarefa.dataCriacao" name="dataCriacao">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="status">Status</label>
+                        <select class="form-control" name="status" [(ngModel)]="tarefa.status">
+                            <option value="PENDENTE">Pendente</option>
+                            <option value="CONCLUIDA">Concluida</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="panel-footer panel-footer-crud">
+        <div class="row">
+            <div class="col-sm-2">
+                <button type="submit" class="btn btn-primary btn-block" (click)="cadastrarTarefa()">Salvar</button> 
+            </div>
+            <div class="col-sm-2">
+                <button type="submit" class="btn btn-defaut btn-block" (click)="listarTarefas()">Listar Tarefas</button> 
+            </div>
+        </div>
+    </div>
+</div>

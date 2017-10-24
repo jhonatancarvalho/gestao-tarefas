@@ -1,0 +1,28 @@
+.my-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none;
+}
+
+.my-loading .dimmer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+
+.my-loading .loading-bg {
+    position: absolute;
+    display: inline-block;
+    top: 35%; 
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
