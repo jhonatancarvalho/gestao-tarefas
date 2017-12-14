@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('gerenciador-pessoas-app App', () => {
+describe('gerenciador--app App', () => {
   let page: AppPage;
 
   beforeEach(() => {
